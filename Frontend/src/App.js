@@ -1,29 +1,33 @@
 // import React from "react";
-// import "./App.css";
-// import backgroundImage from "./images/background.jpg";
-// import microphoneImage from "./images/microphone.png";
-// import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
-// import NextPage from "./components/NextPage.js";
+// import "../App.css";
+// import backgroundImage from "../images/background.jpg";
+// import microphoneImage from "../images/microphone.png";
+// import { BrowserRouter, Routes, Route, Link, Switch } from "react-router-dom";
+// import NextPage from "./src/components/NextPage";
 
 // const App = () => {
 //   return (
 //     <BrowserRouter>
-//       <div
-//         className="app"
-//         style={{ backgroundImage: `url(${backgroundImage})` }}
-//       >
-//         <Link to="/next-page">
-//           <img
-//             src={microphoneImage}
-//             alt="Microphone"
-//             className="microphone-logo"
-//           />
-//         </Link>
-//         {/* Your component content */}
-//       </div>
-//       {/* <Switch>
+//       <Routes>
+//         {/* <Route path="/" element={<Laxyout />}> */}
+//         <div
+//           className="app"
+//           style={{ backgroundImage: `url(${backgroundImage})` }}
+//         >
+//           <Link to="/next-page">
+//             <img
+//               src={microphoneImage}
+//               alt="Microphone"
+//               className="microphone-logo"
+//             />
+//           </Link>
+//           {/* Your component content */}
+//         </div>
+//         {/* <Switch>
 //         <Route path="/next-page" component={NextPage} />
 //       </Switch> */}
+//         {/* <Route path="/" element={<Layout />}></Route> */}
+//       </Routes>
 //     </BrowserRouter>
 //   );
 // };
