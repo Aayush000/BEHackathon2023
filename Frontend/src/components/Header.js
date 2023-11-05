@@ -1,5 +1,5 @@
 import React from 'react';
-import header from '../images/Header.jpg'
+import header from '../images/Header.jpeg'
 function Header(){
     return (
         <div>
