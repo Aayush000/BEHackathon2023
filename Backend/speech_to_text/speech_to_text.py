@@ -122,12 +122,10 @@ def get_booking_details(isNepali=False):
             details['departure_date'] = line.split(': ')[1].strip()
 
     details = {
-        'origin': 'DFW',
-        'destination': 'ORD',
+        'origin': 'ORD',
+        'destination': 'DFW',
         'departure_date': '2023-12-23'
     }
     return details
 
-booking_details = get_booking_details()
-print(booking_details)
 

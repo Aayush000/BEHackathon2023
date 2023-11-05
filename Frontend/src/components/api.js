@@ -1,5 +1,13 @@
+import { fetchModelResponse } from "./fetchModelResponse";
+
 // Makes the api call
-const apiUrl = "http://localhost:4000/flights?date=2023-11-23&destination=DFW";
+
+const modelResponse = fetchModelResponse();
+const departure_date = modelResponse.departure_date || "2023-12-23"
+const destination = modelResponse.destination || "DFW"
+const origin = modelResponse.origin || "ORD"
+
+const apiUrl = `http://localhost:4000/flights?date=${departure_date}&destination=${destination}`;
 
 export const getFlightData = async () => {
   try {

@@ -1,13 +1,16 @@
 from flask import Flask
 from speech_to_text import get_booking_details
+from flask_cors import CORS
+
 
 api = Flask(__name__)
+CORS(api)  # Allow CORS for all routes
 
 @api.route("/")
 def my():
     response_body = {
-        "name": "Hello",
-        "about": "There"
+        "name": "Welcome to Airey",
+        "about": "AI Assistance Model"
     }
 
     return response_body
