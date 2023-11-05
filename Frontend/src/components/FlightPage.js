@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import useSound from "use-sound";
+import FlightTable from "./flightTable";
 import "../App.css"; // Import the CSS file
-import flightDetails from "../images/flightdetails.jpeg";
+import Header from "./Header.js";
 
 // Import your audio files
-import audioFile1 from "../audio/carl5.mp3";
+import audioFile1 from "../audio/carl4.mp3";
 import emptyFile from "../audio/sec6.mp3";
 
-const FourthPage = () => {
+const FlightPage = () => {
   const navigate = useNavigate();
   const [playAudio1] = useSound(audioFile1, { volume: 0.5 });
   const [playAudio2] = useSound(emptyFile, { volume: 0.5 });
@@ -44,8 +45,8 @@ const FourthPage = () => {
   useEffect(() => {
     // const totalAudioTime = 5000 + 4000 * 3; // Adjust time as needed
     const navigationTimer = setTimeout(() => {
-      navigate("/payment");
-    }, 12000);
+      navigate("/fourth-page");
+    }, 11000);
 
     return () => {
       clearTimeout(navigationTimer);
@@ -53,11 +54,17 @@ const FourthPage = () => {
   }, [navigate]);
 
   return (
-    <div>
+    //   <div className="FlightPage">
+    //   <Header />
+    //   <FlightTable />
+    // </div>
+
+    <div className="FlightPage">
       <button onClick={handlePlaySoundSequence}>?</button>
-      <img src={flightDetails} alt="Details" className="details" />
+      <Header />
+      <FlightTable />
     </div>
   );
 };
 
-export default FourthPage;
+export default FlightPage;
