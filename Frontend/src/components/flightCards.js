@@ -1,8 +1,6 @@
 // FlightCard.js
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge';
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function formatTime(time) {

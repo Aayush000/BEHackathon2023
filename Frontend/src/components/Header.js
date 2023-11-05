@@ -1,5 +1,5 @@
 import React from 'react';
-import header from '/Users/ashahopkins/Desktop/hackathon/BEHackathon2023/Frontend/src/images/Header.jpg'
+import header from '../images/Header.jpg'
 function Header(){
     return (
         <div>
