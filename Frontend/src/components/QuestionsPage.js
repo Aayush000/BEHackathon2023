@@ -26,16 +26,3 @@ const QuestionPage = () => {
 };
 
 export default QuestionPage;
-
-// const QuestionsPage = () => {
-// return (
-//   <div
-//     className="questionsPage"
-//     style={{ backgroundImage: `url(${backgroundImage})` }}
-//   >
-//     {/* Your component content */}
-//   </div>
-// );
-// };
-
-// export default QuestionsPage;
