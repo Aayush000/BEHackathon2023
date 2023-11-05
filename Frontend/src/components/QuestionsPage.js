@@ -8,7 +8,7 @@ const QuestionPage = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/third-page");
+      navigate("/flight-page");
     }, 5000);
 
     return () => clearTimeout(timer);

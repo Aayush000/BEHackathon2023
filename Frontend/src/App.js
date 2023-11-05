@@ -12,17 +12,19 @@ import QuestionsPage from "./components/QuestionsPage";
 import FourthPage from "./components/FourthPage";
 import Payment from "./components/Payment";
 import Thankyou from "./components/Thankyou";
+import FlightPage from "./components/FlightPage";
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/third-page" element={<ThirdPage />} />
+        {/* <Route path="/third-page" element={<ThirdPage />} /> */}
         <Route path="/question-page" element={<QuestionsPage />} />
         <Route path="/fourth-page" element={<FourthPage />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/thankyou" element={<Thankyou />} />
+        <Route path="/flight-page" element={<FlightPage/>} />
         {/* Redirect to the homepage if no other route is matched */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
