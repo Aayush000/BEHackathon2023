@@ -11,6 +11,7 @@ import ThirdPage from "./components/ThirdPage";
 import QuestionsPage from "./components/QuestionsPage";
 import FourthPage from "./components/FourthPage";
 import Payment from "./components/Payment";
+import Thankyou from "./components/Thankyou";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/question-page" element={<QuestionsPage />} />
         <Route path="/fourth-page" element={<FourthPage />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/thankyou" element={<Thankyou />} />
         {/* Redirect to the homepage if no other route is matched */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

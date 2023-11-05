@@ -1,15 +1,17 @@
-// FourthPage.js
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
-  return (
-    <div>
-      <h1>
-        Hello world. This is Fifth page. This will contain the payment info.
-      </h1>
-      {/* Add content for the next page here */}
-    </div>
-  );
-};
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate("/thankyou");
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
+  return <h1>This is the Payment Page.</h1>;
+};
 export default Payment;
