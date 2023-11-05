@@ -1,25 +1,95 @@
-// App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import "./App.css";
-import HomePage from "./components/HomePage"; // Adjust the path if necessary
-import NextPage from "./components/NextPage"; // Make sure this path is correct
+import HomePage from "./components/HomePage";
+import ThirdPage from "./components/ThirdPage";
 import QuestionsPage from "./components/QuestionsPage";
+import FourthPage from "./components/FourthPage";
+import Payment from "./components/Payment";
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/third-page" element={<ThirdPage />} />
         <Route path="/question-page" element={<QuestionsPage />} />
-        <Route path="/next-page" element={<NextPage />} />
-        {/* Define other Routes here if necessary */}
+        <Route path="/fourth-page" element={<FourthPage />} />
+        <Route path="/payment" element={<Payment />} />
+        {/* Redirect to the homepage if no other route is matched */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );
 };
 
 export default App;
+
+// import React, { useEffect } from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import "./App.css";
+// import HomePage from "./components/HomePage";
+// import NextPage from "./components/NextPage";
+// import QuestionsPage from "./components/QuestionsPage";
+
+// const App = () => {
+//   // Use useEffect to start a timer when the component mounts
+//   useEffect(() => {
+//     // Set the time interval in milliseconds (e.g., 10 seconds)
+//     const timerInterval = 10000; // 10 seconds
+
+//     // Use setTimeout to navigate to the "NextPage" after the specified interval
+//     const timer = setTimeout(() => {
+//       window.location.href = "/next-page"; // Use window.location to navigate
+//     }, timerInterval);
+
+//     // Clear the timer when the component unmounts to avoid memory leaks
+//     return () => {
+//       clearTimeout(timer);
+//     };
+//   }, []);
+
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<HomePage />} />
+//         <Route path="/question-page" element={<QuestionsPage />} />
+//         <Route path="/next-page" element={<NextPage />} />
+//         {/* Define other Routes here if necessary */}
+//       </Routes>
+//     </Router>
+//   );
+// };
+
+// export default App;
+
+// // App.js
+// import React from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import "./App.css";
+// import HomePage from "./components/HomePage"; // Adjust the path if necessary
+// import NextPage from "./components/NextPage"; // Make sure this path is correct
+// import QuestionsPage from "./components/QuestionsPage";
+
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<HomePage />} />
+//         <Route path="/question-page" element={<QuestionsPage />} />
+//         <Route path="/next-page" element={<NextPage />} />
+//         {/* Define other Routes here if necessary */}
+//       </Routes>
+//     </Router>
+//   );
+// };
+
+// export default App;
 
 // import React from "react";
 // import "./App.css"; // You can create a separate CSS file for your App component
