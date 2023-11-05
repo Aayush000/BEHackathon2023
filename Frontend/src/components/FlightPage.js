@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import FlightTable from './flightTable';
 import '../App.css'; // Import the CSS file
 import Header from './Header.js'
+import voiceGif from '../images/voiceGif.gif'
 
 const FlightPage = () => {
     const navigate = useNavigate();
@@ -19,6 +20,7 @@ const FlightPage = () => {
     <div className="FlightPage">
       <Header/>
       <FlightTable />
+      <img src={voiceGif} alt="voiceGif" className="voiceGif" />
     </div>
   );
 }
