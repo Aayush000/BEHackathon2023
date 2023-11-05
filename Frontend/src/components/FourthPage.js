@@ -7,6 +7,7 @@ import flightDetails from "../images/flightdetails.jpeg";
 // Import your audio files
 import audioFile1 from "../audio/carl5.mp3";
 import emptyFile from "../audio/sec6.mp3";
+import voiceGif from "../images/voiceGif.gif"
 
 const FourthPage = () => {
   const navigate = useNavigate();
@@ -53,9 +54,10 @@ const FourthPage = () => {
   }, [navigate]);
 
   return (
-    <div>
+    <div className="container">
       <button onClick={handlePlaySoundSequence}>?</button>
       <img src={flightDetails} alt="Details" className="details" />
+      <img src={voiceGif} alt="voiceGif" className="voiceGif" />
     </div>
   );
 };

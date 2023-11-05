@@ -9,6 +9,7 @@ import Header from "./Header.js";
 import audioFile1 from "../audio/carl4.mp3";
 import emptyFile from "../audio/sec6.mp3";
 
+
 const FlightPage = () => {
   const navigate = useNavigate();
   const [playAudio1] = useSound(audioFile1, { volume: 0.5 });
@@ -54,15 +55,11 @@ const FlightPage = () => {
   }, [navigate]);
 
   return (
-    //   <div className="FlightPage">
-    //   <Header />
-    //   <FlightTable />
-    // </div>
-
     <div className="FlightPage">
       <button onClick={handlePlaySoundSequence}>?</button>
       <Header />
       <FlightTable />
+      <img src={voiceGif} alt="voiceGif" className="voiceGif" />
     </div>
   );
 };
