@@ -11,7 +11,7 @@ const HomePage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/question-page"); // use navigate to go to the next page
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [navigate]);
