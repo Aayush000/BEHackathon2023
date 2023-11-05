@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import applePay from "../images/applepay.jpg"
 const Payment = () => {
   const navigate = useNavigate();
 
@@ -12,6 +12,8 @@ const Payment = () => {
     return () => clearTimeout(timer);
   }, [navigate]);
 
-  return <h1>This is the Payment Page.</h1>;
+  return (
+    <img src={applePay} alt="applePay" className='applePay'/>
+  )
 };
 export default Payment;

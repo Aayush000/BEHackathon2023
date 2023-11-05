@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import flightDetails from "../images/flightdetails.jpeg"
 
 const FourthPage = () => {
   const navigate = useNavigate();
@@ -13,10 +14,7 @@ const FourthPage = () => {
   }, [navigate]);
 
   return (
-    <h1>
-      This is fourth page. This will contain the specific flight info that will
-      be sorted down.
-    </h1>
+    <img src={flightDetails} alt="Details" className='details'/>
   );
 };
 export default FourthPage;
