@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { getFlightData } from './api';
 import FlightCard from './flightCards';
 import 'bootstrap/dist/css/bootstrap.css';
-import '/Users/ashahopkins/Desktop/hackathon/BEHackathon2023/Frontend/src/App.css'
+import '../App.css'
 
 // generate price
 function generateRandomPrice(min, max) {

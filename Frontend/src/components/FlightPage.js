@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import FlightTable from './flightTable';
-import '/Users/ashahopkins/Desktop/hackathon/BEHackathon2023/Frontend/src/App.css'; // Import the CSS file
+import '../App.css'; // Import the CSS file
 import Header from './Header.js'
 
 const FlightPage = () => {
@@ -14,7 +14,7 @@ const FlightPage = () => {
 
       return () => clearTimeout(timer);
     }, [navigate]);
-    
+
   return (
     <div className="FlightPage">
       <Header/>
