@@ -44,11 +44,11 @@ Example:
 
 **...tell the world who you and your team are 🙂**
 
-- Asha Hopkins - A26FD72
-- Arun Giri - C6KP972
-- Aayush Bhatta - M47PN60
-- Ajay Pokharel - H61HL56
-- Trenton Moore - B6MW978
+- Asha Hopkins
+- Arun Giri
+- Aayush Bhatta
+- Ajay Pokharel
+- Trenton Moore
 
 ### School Name 🏫
 
